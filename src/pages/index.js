@@ -13,8 +13,8 @@ export default function MortgageCalculator() {
   return (
     <main className={`flex min-h-screen flex-col items-center p-24${inter.className}`} >
       <h1 className='text-3xl font-bold m-8'>Mortgage calculator</h1>
-      <section className='m-4 flex xs:flex-col sm:flex-row'>
-        <article>
+      <section className='bg-white shadow-md m-4 flex xs:flex-col sm:flex-row'>
+        <article className='border border-black p-4'>
           <DataInput setAmount={setAmount} setMonthlyInterest={setMonthlyInterest} setLoanTerm={setLoanTerm}></DataInput>
           {loanAmount <= 0 && <p className='text-xs italic'>{`* Please provide a positive loan amount`}</p>}
           {!anualInterest &&  anualInterest!== 0 && <p className='text-xs italic'>{`* Please provide a valid interest value (0 - 100)`}</p>}

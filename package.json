@@ -1,6 +1,7 @@
 {
   "name": "mortgage-app",
   "version": "0.1.0",
+  "author": "Brenda Aguilar Hernandez",
   "private": true,
   "scripts": {
     "dev": "next dev",

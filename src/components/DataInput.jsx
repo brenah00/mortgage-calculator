@@ -15,7 +15,7 @@ export default function DataInput({setAmount, setMonthlyInterest, setLoanTerm}) 
         setLoanTerm(loanTermYears > 0 ? loanTermYears*12 : 0);
     }
     return (
-        <form className='border border-black p-6 bg-white'>
+        <form>
             <label htmlFor="loan" className='font-semibold'>Loan amount</label>
             <Input id="loan" placeholder="Loan amount" onChange={handleAmountChange} min="0"/>
 
